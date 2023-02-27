@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?main-headerfamily=Inconsolata&family=Poppins:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  /*font-family: "Inconsolata";*/
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+img {
+  display: block;
+  width: 100%;
+}
+.container--flex{
+  display: flex;
+  height: 190px;
+
+}
+.container-left{
+  display: flex;
+  width: 25%;
+  height: 100%;
+}
+.container-left-ayuda{
+  align-items: center;
+  padding:10%;
+  font-weight: 900px;
+  color: #157B09;
+}
+.container-center{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  align-items:center;
+  /*text-align: justify;
+  border: darkgoldenrod 2px solid;*/
+}
+.container-center-nutrifarco{
+  font-size: 2.0em;
+  width: 100%;
+  text-align: center;
+  color: #5AB902;
+  border-bottom: #157B09 1px solid;
+  font-family: "Poppins";
+}
+.container-center-down{
+  width: 100%;
+  height: 100%;
+  margin-top: 40px;  
+}
+.menu__item {
+  font-size: 20px; 
+  font-weight: 500;
+  display:inline;
+  height: 100px;
+} 
+.menu__link {
+  padding: 29px;
+  color:#157B09;
+  text-align: center;
+}
+.container-right{
+  width: 25%;
+}
+.right-up{
+  height: 33%;
+  width: 100%;
+  padding: 5px 30px;
+}
+.right-up-1{
+  border:#157B09 3px solid;
+  border-radius: 10px 100px / 120px;
+  height: 90%;
+  width: 100%;
+  padding-bottom: 20px;
+  text-align:center;
+  font-size:xx-large;
+}
+.right-center{
+  height: 33%;
+  width: 100%;
+  text-align:center;
+  font-size: 20px;
+  font-weight: 800;
+}
+.right-center-1{
+  border:#157B09 2px solid;
+  color: white;
+  border-radius: 10px 100px / 120px;
+  background-color: #157B09;
+}
+.right-center-icono{
+  font-size: 60px;
+  color: #157B09;
+}
+.right-center-ingresar{
+  font-size: 30px;
+  color: #157B09;
+  padding: 0%;
+}
+.right-down{
+  margin-right: 40px;;
+  height: 33%;
+  width: 100%; 
+  
+}
+.right-down-1{
+  border:white 3px solid;
+}
+.right-down-2{
+  border:#157B09 3px solid;
+  border-radius: 10px 100px / 120px;
+  margin: 0px 20px;
+  height: 100%;
+  text-align:center;
+  font-size:xx-large; 
+}
+.user-list{
+  text-align: center;
+  color: #157B09;
+  padding-bottom: 10px;
+  font-size: 50px;
+}
+.detail-bottom{
+  text-align: center;
+}
+.detail-bottom-1{
+  height: 80px;
+  width: 180px;
+  border-radius: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: #157B09;
+  color: white;
+  font-weight: 600;
+  font-size: 19px;
+}
+.detail-bottom-1:hover{
+  background-color: #38a82b;
+}

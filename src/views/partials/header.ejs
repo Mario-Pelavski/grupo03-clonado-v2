@@ -1,0 +1,55 @@
+<div class="container--flex">
+  <div class="container-left">
+    <div class="container-left-ayuda" style="font-size: 20px;">
+      <p>¿Necesitás ayuda?</p>
+      <p ><i class="fa-solid fa-phone-flip"></i> Llama al 11-5145-5422</p>
+    </div>
+  </div>
+  <div class="container-center">
+    <div class="container-center-nutrifarco">
+      <h1 class="container-center-nutrifarco">NutriFarco</h1>
+    </div> 
+      <nav class="container-center-down">
+      
+        <li class="menu__item"><a href="" class="menu__link">INICIO</a></li>
+        <li class="menu__item"><a href="" class="menu__link">ACERCA</a></li>
+        <li class="menu__item"><a href="" class="menu__link">FAQ</a></li>
+        <li class="menu__item"><a href="/product/home/" class="menu__link">PRODUCTOS</a></li>   
+        <li class="menu__item"><a href="/user/home/" class="menu__link">CLIENTES</a></li>
+
+      </nav> 
+  </div>
+  
+  <div class="container-right">
+    <div class="right-up">
+      <div class="right-up-1">
+          <a href="/carrito/" style="color: #157B09"
+            >Carrito <i class="fa-solid fa-cart-shopping"></i
+          ></a>
+      </div>
+    </div>
+    <div class="right-center">
+      <% if(locals.userLogueado){ %>
+        <p style="color: #157B09">Hola <%= locals.userLogueado.nombre %>!</p>     
+        <ul >
+          <li><a class="right-center-1" href="/user/logout">Logout</a></li>
+        </ul>
+      <% } else { %>
+          <a href="/user/login" >
+        <i class="fas fa-user" style="color: #157B09"></i></a>
+        <p class="right-center-ingresar">Ingresar</a>
+      <% } %>
+    </div>
+    <div class="right-down">
+      <div class="right-down-1">
+        <div class="right-down-2">
+          <input type="search" style="color: #157B09" placeholder="Buscar productos"/>
+          <i style="color: #157B09" class="fas fa-search"></i>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+  
+</div>

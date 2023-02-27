@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang=”en”>
+  <head>
+      <%- include("./partials/head") %>
+  </head>
+ 
+  <body class="body">
+    <header>
+      <%- include("./partials/header") %>
+      <div class="header-div">
+        <p class="back-arrow"><a class="arrow" href="/"><i class="fas fa-arrow-alt-circle-left"></i> </a></p>
+      </div>
+      </header>
+
+
+    <main>
+      <div>
+        <div class="row">
+          <div class="col-12">
+            <h2 class="user-list">Detalle del Usuario <%= resuDetail.id %> </h2>
+          </div>
+        </div>       
+                  
+        <div >            
+          <p class="list_index1"> Id: <%= resuDetail.id %> </p>
+          <p class="list_index2"> Nombre: <%= resuDetail.nombre %> </p>
+          <p class="list_index2"> Emil: <%= resuDetail.email %> </p>
+          <p class="list_index2"> Telefono: <%= resuDetail.telefono %> </p>         
+        <figure class="list_index6">
+          <img src="/img/imgUsers/<%= resuDetail.imagen %>" alt="">
+        </figure>                        
+        </div>
+
+      <div class="" >
+        <div class="detail-bottom" >
+            <a href="/user/update/<%= resuDetail.id %>"><button class="detail-bottom-1" type="submit">Ir a modificar  </button>
+            <a href="/user/edit/<%= resuDetail.id %>"><button class="detail-bottom-1" type="submit">Ir a borrar </button>
+            <a href="/"><button class="detail-bottom-1" type="submit">Volver a pagina principal </button>           
+            </a>       
+          </div> 
+        </div>       
+      </div>
+    </main>
+
+    <footer>
+      <%- include("./partials/footer-log-reg") %>
+    </footer>
+  </body>
+</html>
